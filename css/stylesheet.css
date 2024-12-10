@@ -20,6 +20,40 @@ grid-template-areas:
 'ft ft';
 }
 
+#container2 {
+    padding: 0;
+    margin: 0;
+    display:grid;
+    height:100vh;
+    
+    grid-template-rows: 7% 7% 61% 15% 5% 5%;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+    'hd hd'
+    'nav nav'
+    'mn mn'
+    'mn mn'
+    '. .'
+    'ft ft';
+    }
+    #container3 {
+        padding: 0;
+        margin: 0;
+        display:grid;
+        height:100vh;
+        
+        grid-template-rows: 7% 7% 21% 55% 5% 5%;
+        grid-template-columns: 70% 30%;
+        grid-template-areas:
+        'hd hd'
+        'nav nav'
+        'mn mn'
+        'sc sc'
+        '. .'
+        'ft ft';
+        }
+    
+
 header { 
 grid-area: hd;
 color: black;
@@ -117,7 +151,7 @@ box-shadow: 1px 2px 3px #2980b9;
 .main {
     grid-area: mn;
     display: flex;
-    flex-direction: colrumn;
+    flex-direction: column;
     margin-top: 10px;
     padding: 10px;
     border: 2px solid #b3c5d3;
@@ -125,6 +159,31 @@ box-shadow: 1px 2px 3px #2980b9;
     display: grid;
     grid-template-rows: auto;
     overflow-y: scroll;
+
+}
+
+.main2 {
+    grid-area: mn;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+.InfoKort {
+    padding-bottom: 20px;
+    border: 2px;
+    border-color: #2980b9;
+    border-style: outset;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px #2980b9;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 30px;
 
 }
 
@@ -164,3 +223,41 @@ footer {
     background-color: #69aedf;
     border-top: 1px solid #2980b9;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c4c0c0;
+    border-radius:8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7a7979;
+  }
+
+  section {
+    grid-area: sc;
+    border-color: #2980b9;
+    border-style: outset;
+    border-radius: 8px;
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  .RubrikHistoria {
+padding-left: 13px;
+  }
+
+  .TextHistoria {
+margin: 5px;
+
+  }
